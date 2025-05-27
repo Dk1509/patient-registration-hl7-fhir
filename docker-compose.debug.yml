@@ -1,0 +1,6 @@
+services:
+  fhirdemographic:
+    image: fhirdemographic
+    build:
+      context: .
+      dockerfile: ./Dockerfile
