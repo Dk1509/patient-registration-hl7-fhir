@@ -23,7 +23,7 @@
     postalCode: '',
     contactNumber: ''
   };
-
+  
   let fhirJson = '';
   let hl7Text = '';
 
