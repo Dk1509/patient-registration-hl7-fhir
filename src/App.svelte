@@ -1,10 +1,16 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import '@shoelace-style/shoelace/dist/themes/light.css';
-  import 'medblocks-ui';
-  import 'medblocks-ui/dist/styles.js';
   import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path';
+  import '@shoelace-style/shoelace/dist/themes/light.css';
+
+  import '@shoelace-style/shoelace/dist/components/input/input.js';
+  import '@shoelace-style/shoelace/dist/components/select/select.js';
+  import '@shoelace-style/shoelace/dist/components/option/option.js';
+  import '@shoelace-style/shoelace/dist/components/button/button.js';
+  import '@shoelace-style/shoelace/dist/components/textarea/textarea.js';
+
+  // Set Shoelace base path before usage
   setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/');
+
 
   let patient = {
     id: '',
@@ -211,3 +217,4 @@
     </sl-button>
   </div>
 </div>
+
